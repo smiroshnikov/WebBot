@@ -1,0 +1,3 @@
+﻿1 - Separate test logic  from elements 
+2 - Page Factory 
+3 - Element Factory 
