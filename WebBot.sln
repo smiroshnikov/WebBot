@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBot", "WebBot\WebBot.csproj", "{69AA850B-8F99-4515-96A5-F7C113DECB63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69AA850B-8F99-4515-96A5-F7C113DECB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69AA850B-8F99-4515-96A5-F7C113DECB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69AA850B-8F99-4515-96A5-F7C113DECB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69AA850B-8F99-4515-96A5-F7C113DECB63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34C66A42-F55A-4263-A1E0-3C12FDB80856}
+	EndGlobalSection
+EndGlobal
