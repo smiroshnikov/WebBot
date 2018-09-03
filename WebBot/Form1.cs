@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -35,7 +36,6 @@ namespace WebBot
             }
 
             IWebElement SearchBox = Browser.FindElement(By.Id("search-key"));
-            //SearchBox.Click();
             SearchBox.SendKeys("Dildo Extra Large");
             SearchBox.SendKeys(OpenQA.Selenium.Keys.Enter);
         }
@@ -51,12 +51,14 @@ namespace WebBot
 //            Browser.Manage().Window.Maximize();
             Browser.Navigate().GoToUrl("https://www.yandex.ru");
 
+            IList<IWebElement> searchByPictureElements =
+                Browser.FindElements(By.XPath("//*[contains(text(),'Картинки')]"));
 
-            IWebElement YandexPictureLink = Browser.FindElement(By.LinkText("//yandex.ru/images/"));
+            IWebElement YandexPictureLink = searchByPictureElements[0];
             YandexPictureLink.Click();
 
-//            var yandexSearchBox = Browser.FindElement(By.ClassName("textinput__control"));
-//            yandexSearchBox.SendKeys("Луна" + OpenQA.Selenium.Keys.Enter);
+            var yandexSearchBox = Browser.FindElement(By.ClassName("textinput__control"));
+            yandexSearchBox.SendKeys("Луна" + OpenQA.Selenium.Keys.Enter);
         }
     }
 }

@@ -1,0 +1,3 @@
+//*[contains(text(),'ABC')]
+
+//*[contains(@class, 'home-link home-link_blue_yes home-tabs__link home-tabs__search')] 
