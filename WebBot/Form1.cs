@@ -23,7 +23,7 @@ namespace WebBot
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void AliExpressTestButton(object sender, EventArgs e)
         {
             Browser = new ChromeDriver();
             Browser.Manage().Window.Maximize();
@@ -40,22 +40,27 @@ namespace WebBot
             SearchBox.SendKeys(OpenQA.Selenium.Keys.Enter);
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void CloseBrowserButton(object sender, EventArgs e)
         {
             Browser.Close();
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void YandexPictureSearchButton(object sender, EventArgs e)
         {
             Browser = new ChromeDriver();
 //            Browser.Manage().Window.Maximize();
             Browser.Navigate().GoToUrl("https://www.yandex.ru");
 
-            IList<IWebElement> searchByPictureElements =
-                Browser.FindElements(By.XPath("//*[contains(text(),'Картинки')]"));
+//            IList<IWebElement> searchByPictureElements =
+//                Browser.FindElements(By.XPath("//*[contains(text(),'Картинки')]"));
+//
+//            IWebElement YandexPictureLink = searchByPictureElements[0];
+//            YandexPictureLink.Click();
 
-            IWebElement YandexPictureLink = searchByPictureElements[0];
-            YandexPictureLink.Click();
+            IWebElement element;
+            element = Browser.FindElement(By.LinkText("Картинки"));
+            element.Click();
+
 
             var yandexSearchBox = Browser.FindElement(By.ClassName("textinput__control"));
             yandexSearchBox.SendKeys("Луна" + OpenQA.Selenium.Keys.Enter);

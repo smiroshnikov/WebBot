@@ -41,7 +41,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Скидки на АлиЭкспресс";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.AliExpressTestButton);
             // 
             // button2
             // 
@@ -51,7 +51,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Exit Browser";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.CloseBrowserButton);
             // 
             // button3
             // 
@@ -61,7 +61,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Фотки Луны на Яндексе";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.YandexPictureSearchButton);
             // 
             // Form1
             // 
